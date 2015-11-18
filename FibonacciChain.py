@@ -18,9 +18,6 @@ if not path in sys.path:
     sys.path.insert(1, path)
     del path
 
-import functionsZH as ZH
-reload(ZH)
-
 import phys_const as pc
 import K39_const as K39
 
@@ -64,12 +61,6 @@ def getAllCombinations(a):
 
 momentumTransferArray = np.array([])
 structureFactorArray = np.array([])
-
-#for p in np.arange(0,N,1):
-#    for q in np.arange(0, N,1):
-#        momentumTransferArray = np.append(momentumTransferArray,kBragg(p,q))
-#        structureFactorArray = np.append(structureFactorArray, structureFactor(p,q))
-
 
 my_range = np.arange(0,N)
 my_combns = getAllCombinations(my_range)
